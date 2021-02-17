@@ -357,7 +357,7 @@ class IndexController extends AbstractController
                 //on recupere l'heure' de l'action qui est de type string que l'on passe en type DateTime
                 $nouvelleAction->setHeure(\DateTime::createFromFormat('H:i:s', $result[$i][4]));
             }
-            
+
             // on verifie grace au ':' si la valeur duree volume reel en heure est une heure ou des datas
             if (preg_match("/:/", $result[$i][5]) ) {
                 //si oui on recupere la duree volume reel en heure de l'action qui est de type string que l'on passe en type DateTime
