@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello IndexController!{% endblock %}
+
+{% block body %}
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid justify-content-start">
+            <a href="{{ path('chargementCsvPartieCompteEtFacture') }}"><button class="btn btn-outline-success me-2">Charger csv.</button></a>
+        </div>
+    </nav>
+
+{% endblock %}
